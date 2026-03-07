@@ -24,7 +24,7 @@ $$
 $$
 
 ## **Eliminasi Gussian**
-###**Langkah 1:**
+### **Langkah 1:**
 
 **Operasi baris:**
 
@@ -35,6 +35,7 @@ R_5 = R_5 - 2R_1
 $$
 
 **Hasil:**
+
 $$
 \begin{bmatrix}
 1 & 1 & 1 & 1 & 1 & 15 \\
@@ -48,6 +49,7 @@ $$
 ### **Langkah 2:**
 
 **Operasi baris:**
+
 $$
 R_3 = R_3 + 2R_2 \\
 R_4 = R_4 + 2R_2 \\
@@ -55,6 +57,7 @@ R_5 = R_5 + 2R_2
 $$
 
 **Hasil:**
+
 $$
 \begin{bmatrix}
 1 & 1 & 1 & 1 & 1 & 15 \\
@@ -68,12 +71,14 @@ $$
 ### **Langkah 3:**
 
 **Operasi baris:**
+
 $$
 R_4 = R_4 + \frac{1}{2}R_3 \\
 R_5 = R_5 + \frac{1}{2}R_3
 $$
 
 **Hasil:**
+
 $$
 \begin{bmatrix}
 1 & 1 & 1 & 1 & 1 & 15 \\
@@ -87,11 +92,13 @@ $$
 ### **Langkah 4:**
 
 **Operasi baris:**
+
 $$
 R_5 = R_5 + \frac{1}{3}R_4
 $$
 
 **Hasil:**
+
 $$
 \begin{bmatrix}
 1 & 1 & 1 & 1 & 1 & 15 \\
@@ -101,6 +108,7 @@ $$
 0 & 0 & 0 & 0 & -4 & -20
 \end{bmatrix}
 $$
+
 Ini disebut **matriks segita atas**
 
 ### **Langkah 5:**
@@ -109,6 +117,7 @@ Ini disebut **matriks segita atas**
 
 Bagi setiap baris dengan koefisien utamanya
 Substitusikan Dari baris terakhir:
+
 $$
 -4x_5 = -20 ⇒ x_5 = 5 \\
 -3x_4 - 3(5) = -27 ⇒ x_4 = 4 \\
@@ -119,6 +128,7 @@ $$
 
 
 **Hasil Akhir:**
+
 $$
 \begin{bmatrix}
 1 & 0 & 0 & 0 & 0 & 1 \\
@@ -128,7 +138,8 @@ $$
 0 & 0 & 0 & 0 & 1 & 5
 \end{bmatrix}
 $$
-**Artinta:**
+
+**Artinya:**
 
 $
 x_1 = 1\\
