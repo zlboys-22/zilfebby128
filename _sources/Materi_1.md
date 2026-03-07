@@ -1,6 +1,6 @@
-# Sistem persamaan linear
+# **Sistem persamaan linear**
 
-## pengertian sistem persamaan linear 
+## Pengertian sistem persamaan linear 
 Persamaan linear adalah salah satu persamaan dalam matematika. Dengan setiap suku yang hanya memiliki pangkat satu pada variabelnya dan tidak ada perkalian antara variabel tersebut.
 Contohnya:
 - (2x + 3y = 10)

@@ -119,10 +119,22 @@ Bagi setiap baris dengan koefisien utamanya
 Substitusikan Dari baris terakhir:
 
 $$
--4x_5 = -20 ⇒ x_5 = 5 
--3x_4 - 3(5) = -27 ⇒ x_4 = 4 
--2x_3 - 2(4) - 2(5) = -24 ⇒ x_3 = 3 
+-4x_5 = -20 ⇒ x_5 = 5
+$$
+
+$$
+-3x_4 - 3(5) = -27 ⇒ x_4 = 4
+$$
+
+$$
+-2x_3 - 2(4) - 2(5) = -24 ⇒ x_3 = 3
+$$
+
+$$
 -x_2 ​− 3 − 4 − 5 = −14 ⇒ x_2 = 2
+$$
+
+$$
 x_1 ​+ 2 + 3 + 4 + 5 = 15 ⇒ x_1 = 1
 $$
 
@@ -141,10 +153,12 @@ $$
 
 **Artinya:**
 
-$
+$$
+\begin{aligned}
 x_1 = 1 \\
 x_2 = 2 \\
 x_3 = 3 \\
 x_4 = 4 \\
 x_5 = 5
-$
+\end{aligned}
+$$
