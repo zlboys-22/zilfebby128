@@ -162,3 +162,9 @@ x_4 = 4 \\
 x_5 = 5
 \end{aligned}
 $$
+
+Matriks di inverskan dan matriks B dikalikan dengan matriks invers
+
+![alt text](image.png)
+
+![alt text](image-1.png)
