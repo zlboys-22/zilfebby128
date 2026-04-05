@@ -163,7 +163,7 @@ x_5 = 5
 \end{aligned}
 $$
 
-Matriks di inverskan dan matriks B dikalikan dengan matriks invers
+**Matriks di inverskan dan matriks B dikalikan dengan matriks invers**
 
 ![alt text](image.png)
 
