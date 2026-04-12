@@ -618,13 +618,97 @@ $$
 
 ### **Mencari Determinan Matriks**
 
-Setelah perhitungan panjang, didapat:
+$$
+\det(A)=
+1\Big[
+1\big(1(1\cdot1-1\cdot5)-1(4\cdot1-1\cdot4)+1(4\cdot5-1\cdot4)\big)
+-1\big(3(1\cdot1-1\cdot5)-1(3\cdot1-1\cdot3)+1(3\cdot5-1\cdot3)\big)
+$$
 
 $$
-\det(A) = -12
++1\big(3(4\cdot1-1\cdot4)-1(3\cdot1-1\cdot3)+1(3\cdot4-4\cdot3)\big)
+-1\big(3(4\cdot1-1\cdot4)-4(3\cdot1-1\cdot3)+1(3\cdot4-4\cdot3)\big)
+\Big]
 $$
+
+$$
+-1\Big[
+2\big(1(1\cdot1-1\cdot5)-1(4\cdot1-1\cdot4)+1(4\cdot5-1\cdot4)\big)
+-1\big(2(1\cdot1-1\cdot5)-1(2\cdot1-1\cdot2)+1(2\cdot5-1\cdot2)\big)
+$$
+
+$$
++1\big(2(4\cdot1-1\cdot4)-1(2\cdot1-1\cdot2)+1(2\cdot4-4\cdot2)\big)
+-1\big(2(4\cdot1-1\cdot4)-4(2\cdot1-1\cdot2)+1(2\cdot4-4\cdot2)\big)
+\Big]
+$$
+
+$$
++1\Big[
+2\big(3(1\cdot1-1\cdot5)-1(3\cdot1-1\cdot3)+1(3\cdot5-1\cdot3)\big)
+-1\big(2(1\cdot1-1\cdot5)-1(2\cdot1-1\cdot2)+1(2\cdot5-1\cdot2)\big)
+$$
+
+$$
++1\big(2(3\cdot1-1\cdot3)-3(2\cdot1-1\cdot2)+1(2\cdot3-3\cdot2)\big)
+-1\big(2(3\cdot1-1\cdot3)-3(2\cdot1-1\cdot2)+1(2\cdot3-3\cdot2)\big)
+\Big]
+$$
+
+$$
+-1\Big[
+2\big(3(4\cdot1-1\cdot4)-1(3\cdot1-1\cdot3)+1(3\cdot4-4\cdot3)\big)
+-1\big(2(4\cdot1-1\cdot4)-1(2\cdot1-1\cdot2)+1(2\cdot4-4\cdot2)\big)
+$$
+
+$$
++1\big(2(3\cdot1-1\cdot3)-3(2\cdot1-1\cdot2)+1(2\cdot3-3\cdot2)\big)
+-1\big(2(3\cdot4-4\cdot3)-3(2\cdot4-4\cdot2)+4(2\cdot3-3\cdot2)\big)
+\Big]
+$$
+
+$$
++1\Big[
+2\big(3(4\cdot1-1\cdot4)-1(3\cdot1-1\cdot3)+1(3\cdot4-4\cdot3)\big)
+-1\big(2(4\cdot1-1\cdot4)-1(2\cdot1-1\cdot2)+1(2\cdot4-4\cdot2)\big)
+$$
+
+$$
++1\big(2(3\cdot1-1\cdot3)-3(2\cdot1-1\cdot2)+1(2\cdot3-3\cdot2)\big)
+-1\big(2(3\cdot4-4\cdot3)-3(2\cdot4-4\cdot2)+4(2\cdot3-3\cdot2)\big)
+\Big]
+$$
+
+$$
+= 1(12 - 0 + 0 - 0)
+- (24 - 0 + 0 - 0)
++ (0 - 0 + 0 - 0)
+- 0
++ 0
+$$
+
+$$
+= 12 - 24 + 0 - 0 + 0
+$$
+
+$$
+\det(A) = \mathbf{-12}
+$$
+
 
 ### **Mencari Adjoin Matriks**
+
+**Definisi Adjoin**
+
+$$
+\text{adj}(A) = C^T
+$$
+
+Dengan:
+
+$$
+C_{ij} = (-1)^{i+j} \det(M_{ij})
+$$
 
 **Matriks Kofaktor**
 
@@ -652,4 +736,45 @@ $$
 \end{bmatrix}
 $$
 
-### **Menghitung Invers
+### **Menghitung Invers**
+
+**Invers**
+
+$$
+A^{-1} = \frac{1}{\det(A)} \text{adj}(A)
+$$
+
+**Substitusikan $det(A) = -12$**
+
+$$
+A^{-1} = \frac{1}{-12}
+\begin{bmatrix}
+12 & -12 & 0 & 0 & 0 \\
+-24 & 36 & -12 & 0 & 0 \\
+0 & -24 & 36 & -12 & 0 \\
+0 & 0 & -24 & 36 & -12 \\
+0 & 0 & 0 & -24 & 12
+\end{bmatrix}
+$$
+
+**Bagi Setiap Elemen dengan -12**
+
+$
+12/-12 = -1 \\
+-12/-12 = 1 \\
+-24/-12 = 2 \\
+36/-12 = -3
+$
+
+**Hasil Akhir Invers**
+
+$$
+A^{-1} =
+\begin{bmatrix}
+-1 & 1 & 0 & 0 & 0 \\
+2 & -3 & 1 & 0 & 0 \\
+0 & 2 & -3 & 1 & 0 \\
+0 & 0 & 2 & -3 & 1 \\
+0 & 0 & 0 & 2 & -1
+\end{bmatrix}
+$$

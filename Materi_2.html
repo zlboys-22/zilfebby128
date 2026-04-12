@@ -393,7 +393,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui-matriks"><strong>Diketahui Matriks</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-matriks"><strong>Mencari Determinan Matriks</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-adjoin-matriks"><strong>Mencari Adjoin Matriks</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-invers">**Menghitung Invers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-invers"><strong>Menghitung Invers</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -1025,14 +1025,96 @@ A=
 </section>
 <section id="mencari-determinan-matriks">
 <h3><strong>Mencari Determinan Matriks</strong><a class="headerlink" href="#mencari-determinan-matriks" title="Link to this heading">#</a></h3>
-<p>Setelah perhitungan panjang, didapat:</p>
 <div class="math notranslate nohighlight">
 \[
-\det(A) = -12
+\det(A)=
+1\Big[
+1\big(1(1\cdot1-1\cdot5)-1(4\cdot1-1\cdot4)+1(4\cdot5-1\cdot4)\big)
+-1\big(3(1\cdot1-1\cdot5)-1(3\cdot1-1\cdot3)+1(3\cdot5-1\cdot3)\big)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++1\big(3(4\cdot1-1\cdot4)-1(3\cdot1-1\cdot3)+1(3\cdot4-4\cdot3)\big)
+-1\big(3(4\cdot1-1\cdot4)-4(3\cdot1-1\cdot3)+1(3\cdot4-4\cdot3)\big)
+\Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+-1\Big[
+2\big(1(1\cdot1-1\cdot5)-1(4\cdot1-1\cdot4)+1(4\cdot5-1\cdot4)\big)
+-1\big(2(1\cdot1-1\cdot5)-1(2\cdot1-1\cdot2)+1(2\cdot5-1\cdot2)\big)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++1\big(2(4\cdot1-1\cdot4)-1(2\cdot1-1\cdot2)+1(2\cdot4-4\cdot2)\big)
+-1\big(2(4\cdot1-1\cdot4)-4(2\cdot1-1\cdot2)+1(2\cdot4-4\cdot2)\big)
+\Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++1\Big[
+2\big(3(1\cdot1-1\cdot5)-1(3\cdot1-1\cdot3)+1(3\cdot5-1\cdot3)\big)
+-1\big(2(1\cdot1-1\cdot5)-1(2\cdot1-1\cdot2)+1(2\cdot5-1\cdot2)\big)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++1\big(2(3\cdot1-1\cdot3)-3(2\cdot1-1\cdot2)+1(2\cdot3-3\cdot2)\big)
+-1\big(2(3\cdot1-1\cdot3)-3(2\cdot1-1\cdot2)+1(2\cdot3-3\cdot2)\big)
+\Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+-1\Big[
+2\big(3(4\cdot1-1\cdot4)-1(3\cdot1-1\cdot3)+1(3\cdot4-4\cdot3)\big)
+-1\big(2(4\cdot1-1\cdot4)-1(2\cdot1-1\cdot2)+1(2\cdot4-4\cdot2)\big)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++1\big(2(3\cdot1-1\cdot3)-3(2\cdot1-1\cdot2)+1(2\cdot3-3\cdot2)\big)
+-1\big(2(3\cdot4-4\cdot3)-3(2\cdot4-4\cdot2)+4(2\cdot3-3\cdot2)\big)
+\Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++1\Big[
+2\big(3(4\cdot1-1\cdot4)-1(3\cdot1-1\cdot3)+1(3\cdot4-4\cdot3)\big)
+-1\big(2(4\cdot1-1\cdot4)-1(2\cdot1-1\cdot2)+1(2\cdot4-4\cdot2)\big)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++1\big(2(3\cdot1-1\cdot3)-3(2\cdot1-1\cdot2)+1(2\cdot3-3\cdot2)\big)
+-1\big(2(3\cdot4-4\cdot3)-3(2\cdot4-4\cdot2)+4(2\cdot3-3\cdot2)\big)
+\Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= 1(12 - 0 + 0 - 0)
+- (24 - 0 + 0 - 0)
++ (0 - 0 + 0 - 0)
+- 0
++ 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= 12 - 24 + 0 - 0 + 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\det(A) = \mathbf{-12}
 \]</div>
 </section>
 <section id="mencari-adjoin-matriks">
 <h3><strong>Mencari Adjoin Matriks</strong><a class="headerlink" href="#mencari-adjoin-matriks" title="Link to this heading">#</a></h3>
+<p><strong>Definisi Adjoin</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\text{adj}(A) = C^T
+\]</div>
+<p>Dengan:</p>
+<div class="math notranslate nohighlight">
+\[
+C_{ij} = (-1)^{i+j} \det(M_{ij})
+\]</div>
 <p><strong>Matriks Kofaktor</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1059,7 +1141,43 @@ C =
 \end{split}\]</div>
 </section>
 <section id="menghitung-invers">
-<h3>**Menghitung Invers<a class="headerlink" href="#menghitung-invers" title="Link to this heading">#</a></h3>
+<h3><strong>Menghitung Invers</strong><a class="headerlink" href="#menghitung-invers" title="Link to this heading">#</a></h3>
+<p><strong>Invers</strong></p>
+<div class="math notranslate nohighlight">
+\[
+A^{-1} = \frac{1}{\det(A)} \text{adj}(A)
+\]</div>
+<p><strong>Substitusikan <span class="math notranslate nohighlight">\(det(A) = -12\)</span></strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A^{-1} = \frac{1}{-12}
+\begin{bmatrix}
+12 &amp; -12 &amp; 0 &amp; 0 &amp; 0 \\
+-24 &amp; 36 &amp; -12 &amp; 0 &amp; 0 \\
+0 &amp; -24 &amp; 36 &amp; -12 &amp; 0 \\
+0 &amp; 0 &amp; -24 &amp; 36 &amp; -12 \\
+0 &amp; 0 &amp; 0 &amp; -24 &amp; 12
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Bagi Setiap Elemen dengan -12</strong></p>
+<p><span class="math notranslate nohighlight">\(
+12/-12 = -1 \\
+-12/-12 = 1 \\
+-24/-12 = 2 \\
+36/-12 = -3
+\)</span></p>
+<p><strong>Hasil Akhir Invers</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A^{-1} =
+\begin{bmatrix}
+-1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+2 &amp; -3 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 2 &amp; -3 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 2 &amp; -3 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 2 &amp; -1
+\end{bmatrix}
+\end{split}\]</div>
 </section>
 </section>
 </section>
@@ -1133,7 +1251,7 @@ C =
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui-matriks"><strong>Diketahui Matriks</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-matriks"><strong>Mencari Determinan Matriks</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-adjoin-matriks"><strong>Mencari Adjoin Matriks</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-invers">**Menghitung Invers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-invers"><strong>Menghitung Invers</strong></a></li>
 </ul>
 </li>
 </ul>
