@@ -153,7 +153,7 @@ $=8+4+4=16$
 
 $M_{11} = 16$
 
-2. Hitung Minor M_{12}
+2. Hitung Minor $M_{12}$
 
 Hapus baris 1 kolom 2:
 $$
@@ -227,7 +227,7 @@ $=16−48+16+16=0$
 $det(A)=0$
 
 **Jawaban B**
-1. 
+4. 
 $$
 A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}
 $$
