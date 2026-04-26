@@ -386,10 +386,14 @@ document.write(`
 <h1><strong>Soal Determinan Matriks dan Adjoin</strong><a class="headerlink" href="#soal-determinan-matriks-dan-adjoin" title="Link to this heading">#</a></h1>
 <p><strong>A. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris</strong></p>
 <div class="math notranslate nohighlight">
-\[\sum_{k=1}^{n} (-1)^{i+k} a_{ik} M_{ik}\]</div>
+\[
+\sum_{k=1}^{n} (-1)^{i+k} a_{ik} M_{ik}
+\]</div>
 <p>dengan <span class="math notranslate nohighlight">\(M_{ij}\)</span> adalah minior dari matrik A dan</p>
 <div class="math notranslate nohighlight">
-\[M_{ij} = \det A_{ij}.\]</div>
+\[
+M_{ij} = \det A_{ij}.
+\]</div>
 <p><span class="math notranslate nohighlight">\(A_{ij}\)</span> adalah submatrik dengan menghapus baris i dan kolom kolom j dari matrix <span class="math notranslate nohighlight">\(A_{mxn}\)</span> dengan <span class="math notranslate nohighlight">\(1 \le i, j \le n\)</span></p>
 <ol class="arabic simple">
 <li></li>
@@ -448,87 +452,155 @@ A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 
 <li></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[\begin{split}A= \begin{bmatrix} -7 &amp; -5 \\ 1 &amp; 4 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+A= \begin{bmatrix} -7 &amp; -5 \\ 1 &amp; 4 \end{bmatrix}
+\end{split}\]</div>
 <p>Rumus:</p>
 <div class="math notranslate nohighlight">
-\[det(A)=ad−bc\]</div>
+\[
+det(A)=ad−bc
+\]</div>
 <div class="math notranslate nohighlight">
-\[=(−7)(4)−(−5)(1)=−28+5=−23\]</div>
+\[
+=(−7)(4)−(−5)(1)=−28+5=−23
+\]</div>
 <div class="math notranslate nohighlight">
-\[det(A)=−23\]</div>
+\[
+det(A)=−23
+\]</div>
 <ol class="arabic simple" start="2">
 <li></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\end{split}\]</div>
 <p>Gunakan ekspansi baris pertama:</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\det(A) = 0 \cdot M_{11} - 2 \cdot M_{12} + (-3) \cdot M_{13}$$​\\
-Hitung minor:\\
-Minor $M_{12}$ :\\\begin{split}$$\begin{vmatrix}1 &amp; −1 \\ 0 &amp; 1\end{vmatrix} = (1)(1)−(−1)(0)=1$$​\end{split}\\Minor $M_{13}$ :\\\begin{split}$$\begin{vmatrix}1 &amp; −2 \\ 0 &amp; 0\end{vmatrix} =(1)(0)−(−2)(0)=0\end{split}\end{aligned}\end{align} \]</div>
+\[
+\det(A) = 0 \cdot M_{11} - 2 \cdot M_{12} + (-3) \cdot M_{13}
+\]</div>
+<p>Hitung minor:</p>
+<p>Minor <span class="math notranslate nohighlight">\(M_{12}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}1 &amp; −1 \\ 0 &amp; 1\end{vmatrix} = (1)(1)−(−1)(0)=1
+\end{split}\]</div>
+<p>Minor <span class="math notranslate nohighlight">\(M_{13}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}1 &amp; −2 \\ 0 &amp; 0\end{vmatrix} =(1)(0)−(−2)(0)=0
+\end{split}\]</div>
 <p>Substitusi:</p>
-<p><span class="math notranslate nohighlight">\(det(A)=0−2(1)+(−3)(0)=−2\)</span></p>
-<p><span class="math notranslate nohighlight">\(det(A)=−2\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+det(A)=0−2(1)+(−3)(0)=−2
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+det(A)=−2
+\]</div>
 <ol class="arabic simple" start="3">
 <li></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -3 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -3 \end{bmatrix}
+\end{split}\]</div>
 <p>Gunakan ekspansi baris pertama:</p>
 <div class="math notranslate nohighlight">
-\[det(A)=\sum_{k=1}^n (-1)^{i+k} a_{ik} M_{ik}\]</div>
+\[
+det(A)=\sum_{k=1}^n (-1)^{i+k} a_{ik} M_{ik}
+\]</div>
 <div class="math notranslate nohighlight">
-\[det(A) = 1 ⋅ M_{11} − (−3) ⋅ M_{12} + 1 ⋅ M_{13} − 1 ⋅ M_{14}\]</div>
+\[
+det(A) = 1 ⋅ M_{11} − (−3) ⋅ M_{12} + 1 ⋅ M_{13} − 1 ⋅ M_{14}
+\]</div>
 <ol class="arabic simple">
 <li><p>Hitung Minor <span class="math notranslate nohighlight">\(M_{11}\)</span></p></li>
 </ol>
 <p>Hapus baris 1 kolom 1:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}M_{11} = \begin{vmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix} \end{split}\]</div>
+\[\begin{split}
+M_{11} = \begin{vmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix}
+\end{split}\]</div>
 <p>Ekspansi baris pertama:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}=1 \begin{vmatrix} −3 &amp; 1 \\ 1 &amp; −3 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; -3 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; 1 \\ -3 &amp; 1 \\ \end{vmatrix}\end{split}\]</div>
+\[\begin{split}
+=1 \begin{vmatrix} −3 &amp; 1 \\ 1 &amp; −3 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; -3 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; 1 \\ -3 &amp; 1 \\ \end{vmatrix}
+\end{split}\]</div>
 <p>Hitung:</p>
-<p><span class="math notranslate nohighlight">\(=1[(9−1)]−1[(−3−1)]+1[(1+3)]\)</span></p>
-<p><span class="math notranslate nohighlight">\(=8+4+4=16\)</span></p>
-<p><span class="math notranslate nohighlight">\(M_{11} = 16\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+=1[(9−1)]−1[(−3−1)]+1[(1+3)]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+=8+4+4=16
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+M_{11} = 16
+\]</div>
 <ol class="arabic simple" start="2">
 <li><p>Hitung Minor <span class="math notranslate nohighlight">\(M_{12}\)</span></p></li>
 </ol>
 <p>Hapus baris 1 kolom 2:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}M_{12} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix}\end{split}\]</div>
+\[\begin{split}
+M_{12} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix}
+\end{split}\]</div>
 <p>Ekspansi baris pertama:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}=(-3) \begin{vmatrix} −3 &amp; 1 \\ 1 &amp; −3 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; -3 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \\ \end{vmatrix}\end{split}\]</div>
+\[\begin{split}
+=(-3) \begin{vmatrix} −3 &amp; 1 \\ 1 &amp; −3 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; -3 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \\ \end{vmatrix}
+\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[=(−3)(8)−(−4)+4=−24+4+4=−16\]</div>
+\[
+=(−3)(8)−(−4)+4=−24+4+4=−16
+\]</div>
 <div class="math notranslate nohighlight">
-\[M_{12}=−16\]</div>
+\[
+M_{12}=−16
+\]</div>
 <ol class="arabic simple" start="3">
 <li><p>Hitung Minor <span class="math notranslate nohighlight">\(M_{13}\)</span></p></li>
 </ol>
 <p>Hapus baris 1 kolom 3:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}M_{13} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix}\end{split}\]</div>
+\[\begin{split}
+M_{13} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix}
+\end{split}\]</div>
 <p>Ekspansi:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}=(-3) \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; −3 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; -3 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 1 \\ \end{vmatrix}\end{split}\]</div>
+\[\begin{split}
+=(-3) \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; −3 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; -3 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 1 \\ \end{vmatrix}
+\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[=(−3)(−4)−(−4)+0=12+4=16\]</div>
+\[
+=(−3)(−4)−(−4)+0=12+4=16
+\]</div>
 <div class="math notranslate nohighlight">
-\[M_{13}=16\]</div>
+\[
+M_{13}=16
+\]</div>
 <ol class="arabic simple" start="4">
 <li><p>Hitung Minor <span class="math notranslate nohighlight">\(M_{14}\)</span></p></li>
 </ol>
 <p>Hapus baris 1 kolom 4:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}M_{14} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 \\ 1 &amp; 1 &amp; 1 \end{vmatrix}\end{split}\]</div>
+\[\begin{split}
+M_{14} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 \\ 1 &amp; 1 &amp; 1 \end{vmatrix}
+\end{split}\]</div>
 <p>Ekspansi:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}=(-3) \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 1 \\ \end{vmatrix}\end{split}\]</div>
+\[\begin{split}
+=(-3) \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 1 \\ \end{vmatrix}
+\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[​=(−3)(4)−(4)+0=−12−4=−16\]</div>
+\[
+=(−3)(4)−(4)+0=−12−4=−16
+\]</div>
 <div class="math notranslate nohighlight">
 \[
 M_{14}=−16
@@ -536,57 +608,97 @@ M_{14}=−16
 <ol class="arabic simple" start="5">
 <li><p>Substitusi ke determinan</p></li>
 </ol>
-<p><span class="math notranslate nohighlight">\(det(A)=1(16)−(−3)(−16)+1(16)−1(−16)\)</span></p>
-<p><span class="math notranslate nohighlight">\(=16−48+16+16=0\)</span></p>
-<p><span class="math notranslate nohighlight">\(det(A)=0\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+det(A)=1(16)−(−3)(−16)+1(16)−1(−16)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+=16−48+16+16=0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+det(A)=0
+\]</div>
 <p><strong>Jawaban B</strong></p>
 <ol class="arabic simple" start="4">
 <li></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{bmatrix} -7 &amp; -5 \\ 1 &amp; 4 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+A = \begin{bmatrix} -7 &amp; -5 \\ 1 &amp; 4 \end{bmatrix}
+\end{split}\]</div>
 <p>Determinan:</p>
-<p><span class="math notranslate nohighlight">\(det(A)=(−7)(4)−(−5)(1)=−28+5=−23\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+det(A)=(−7)(4)−(−5)(1)=−28+5=−23
+\]</div>
 <p>Adjoin:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}adj(A)\begin{bmatrix} 4 &amp; 5 \\ -1 &amp; -7 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+adj(A)\begin{bmatrix} 4 &amp; 5 \\ -1 &amp; -7 \end{bmatrix}
+\end{split}\]</div>
 <p>Invers:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 &amp; 5 \\ -1 &amp; -7 \end{bmatrix} = \begin{bmatrix} -\frac{4}{23} &amp; -\frac{5}{23} \\ \frac{1}{23} &amp; \frac{7}{23} \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 &amp; 5 \\ -1 &amp; -7 \end{bmatrix} = \begin{bmatrix} -\frac{4}{23} &amp; -\frac{5}{23} \\ \frac{1}{23} &amp; \frac{7}{23} \end{bmatrix}
+\end{split}\]</div>
 <ol class="arabic simple" start="5">
 <li></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\end{split}\]</div>
 <p><strong>Determinan:</strong></p>
-<p><span class="math notranslate nohighlight">\(det(A)=−2\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+det(A)=−2
+\]</div>
 <p><strong>Matriks kofaktor</strong></p>
 <p>Hitung minor + tanda:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}C = \begin{bmatrix} -2 &amp; -1 &amp; 0 \\ -2 &amp; 0 &amp; 0 \\ -8 &amp; -3 &amp; -2 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+C = \begin{bmatrix} -2 &amp; -1 &amp; 0 \\ -2 &amp; 0 &amp; 0 \\ -8 &amp; -3 &amp; -2 \end{bmatrix}
+\end{split}\]</div>
 <p><strong>Adjoin (transpose kofaktor)</strong></p>
 <div class="math notranslate nohighlight">
-\[\begin{split}Adj(A) = \begin{bmatrix} -2 &amp; -2 &amp; -8 \\ -1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; -2 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+Adj(A) = \begin{bmatrix} -2 &amp; -2 &amp; -8 \\ -1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; -2 \end{bmatrix}
+\end{split}\]</div>
 <p><strong>Invers</strong></p>
 <div class="math notranslate nohighlight">
-\[A^{-1} = \frac{1}{-2} Adj(A)\]</div>
+\[
+A^{-1} = \frac{1}{-2} Adj(A)
+\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}A^{-1} = \begin{bmatrix} 1 &amp; 1 &amp; 4 \\ \frac{1}{2} &amp; 0 &amp; \frac{3}{2} \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+A^{-1} = \begin{bmatrix} 1 &amp; 1 &amp; 4 \\ \frac{1}{2} &amp; 0 &amp; \frac{3}{2} \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\end{split}\]</div>
 <ol class="arabic simple" start="6">
 <li></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -3 \end{bmatrix}\end{split}\]</div>
+\[\begin{split}
+A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -3 \end{bmatrix}
+\end{split}\]</div>
 <p><strong>Determinan</strong></p>
 <p>Dari hasil sebelumnya:</p>
 <div class="math notranslate nohighlight">
-\[det(A)=0\]</div>
+\[
+det(A)=0
+\]</div>
 <p>Kesimpulan penting</p>
 <p>Karena:</p>
 <div class="math notranslate nohighlight">
-\[det(A)=0\]</div>
+\[
+det(A)=0
+\]</div>
 <p>maka:</p>
-<p><span class="math notranslate nohighlight">\(A^{−1}\)</span> <strong>tidak ada (tidak invertible)</strong></p>
+<div class="math notranslate nohighlight">
+\[
+A^{-1} \text{ tidak ada (tidak invertible)}
+\]</div>
 </section>
 
     <script type="text/x-thebe-config">
