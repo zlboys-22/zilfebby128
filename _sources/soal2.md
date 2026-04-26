@@ -76,13 +76,13 @@ $$det(A)=0 ⋅ M_{11} − 2 ⋅ M_{12} + (−3) ⋅ M_{13}$$​
 
 Hitung minor:
 
-Minor $M_{12}$:
+1. Minor $M_{12}$ :
 
 $$\begin{vmatrix}1 & −1 \\ 0 & 1\end{vmatrix} = (1)(1)−(−1)(0)=1$$​
 
-Minor $M_{13}$:
+2. Minor $M_{13}$ :
 
-$$\begin{vmatrix}1 & −2 \\ 0 & \end{vmatrix} =(1)(0)−(−2)(0)=0$$
+$$\begin{vmatrix}1 & −2 \\ 0 & 0\end{vmatrix} =(1)(0)−(−2)(0)=0$$
 
 Substitusi:
 
@@ -155,11 +155,11 @@ $$M_{13} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & 1 & -3 \\ 1 & 1 & 1 \end{vmatrix}$$
 
 Ekspansi:
 
-$$=(-3) \begin{vmatrix} 1 & -3 \\ 1 & 1 \end{vmatrix} -1 \begin{vmatrix} 1 & -3 \\ 1 & 1 \\ \end{vmatrix} +1 \begin{vmatrix} 1 & 1 \\ 1 & 1 \\ \end{vmatrix}$$
-​
-$$=(−3)(4)−(4)+0=−12−4=−16$$
-
-$M_{14}=−16)$
+$$
+=(-3) \begin{vmatrix} 1 & -3 \\ 1 & 1 \end{vmatrix} -1 \begin{vmatrix} 1 & -3 \\ 1 & 1 \\ \end{vmatrix} +1 \begin{vmatrix} 1 & 1 \\ 1 & 1 \\ \end{vmatrix}
+​=(−3)(4)−(4)+0=−12−4=−16
+M_{14}=−16
+$$
 
 5. Substitusi ke determinan
 
@@ -219,7 +219,7 @@ $$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 
 
 Dari hasil sebelumnya:
 
-$det(A)=0$$
+$$det(A)=0$$
 
 Kesimpulan penting
 

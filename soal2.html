@@ -463,7 +463,7 @@ A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 
 \[\begin{split}A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
 <p>Gunakan ekspansi baris pertama:</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}det(A)=0 ⋅ M_{11} − 2 ⋅ M_{12} + (−3) ⋅ M_{13}$$​\\Hitung minor:\\Minor $M_{12}$:\\\begin{split}$$\begin{vmatrix}1 &amp; −1 \\ 0 &amp; 1\end{vmatrix} = (1)(1)−(−1)(0)=1$$​\end{split}\\Minor $M_{13}$:\\\begin{split}$$\begin{vmatrix}1 &amp; −2 \\ 0 &amp; \end{vmatrix} =(1)(0)−(−2)(0)=0\end{split}\end{aligned}\end{align} \]</div>
+\[ \begin{align}\begin{aligned}det(A)=0 ⋅ M_{11} − 2 ⋅ M_{12} + (−3) ⋅ M_{13}$$​\\Hitung minor:\\1. Minor $M_{12}$ :\\\begin{split}$$\begin{vmatrix}1 &amp; −1 \\ 0 &amp; 1\end{vmatrix} = (1)(1)−(−1)(0)=1$$​\end{split}\\2. Minor $M_{13}$ :\\\begin{split}$$\begin{vmatrix}1 &amp; −2 \\ 0 &amp; 0\end{vmatrix} =(1)(0)−(−2)(0)=0\end{split}\end{aligned}\end{align} \]</div>
 <p>Substitusi:</p>
 <p><span class="math notranslate nohighlight">\(det(A)=0−2(1)+(−3)(0)=−2\)</span></p>
 <p><span class="math notranslate nohighlight">\(det(A)=−2\)</span></p>
@@ -522,10 +522,11 @@ A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 
 \[\begin{split}M_{13} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 \\ 1 &amp; 1 &amp; 1 \end{vmatrix}\end{split}\]</div>
 <p>Ekspansi:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}=(-3) \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 1 \\ \end{vmatrix}\end{split}\]</div>
-<p>​
-$<span class="math notranslate nohighlight">\(=(−3)(4)−(4)+0=−12−4=−16\)</span>$</p>
-<p><span class="math notranslate nohighlight">\(M_{14}=−16)\)</span></p>
+\[\begin{split}
+=(-3) \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \end{vmatrix} -1 \begin{vmatrix} 1 &amp; -3 \\ 1 &amp; 1 \\ \end{vmatrix} +1 \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 1 \\ \end{vmatrix}
+​=(−3)(4)−(4)+0=−12−4=−16
+M_{14}=−16
+\end{split}\]</div>
 <ol class="arabic simple" start="5">
 <li><p>Substitusi ke determinan</p></li>
 </ol>
@@ -572,7 +573,8 @@ $<span class="math notranslate nohighlight">\(=(−3)(4)−(4)+0=−12−4=−16
 \[\begin{split}A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -3 \end{bmatrix}\end{split}\]</div>
 <p><strong>Determinan</strong></p>
 <p>Dari hasil sebelumnya:</p>
-<p><span class="math notranslate nohighlight">\(det(A)=0\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[det(A)=0\]</div>
 <p>Kesimpulan penting</p>
 <p>Karena:</p>
 <div class="math notranslate nohighlight">
