@@ -30,9 +30,11 @@ $$
 $$
 (\operatorname{adj} A)_{ij} = (-1)^{i+j} M_{ji}
 $$
+
 dan
+
 $$
-A^{-1} = \frac{1}{\det A} \operatorname{adj} A.
+A^{-1} = \frac{1}{\det A} \operatorname{adj} A
 $$
 
 4. 
