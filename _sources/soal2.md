@@ -8,6 +8,7 @@ $$
 
 dengan $M_{ij}$ adalah minior dari matrik A dan
 
+
 $$
 M_{ij} = \det A_{ij}.
 $$
@@ -252,6 +253,26 @@ $$
 det(A)=(−7)(4)−(−5)(1)=−28+5=−23
 $$
 
+Minor:
+
+$$M_{11} = \begin{vmatrix} 4 \end{vmatrix} = 4$$
+
+$$M_{12} = \begin{vmatrix} 1 \end{vmatrix} = 1$$
+
+$$M_{21} = \begin{vmatrix} -5 \end{vmatrix} = -5$$
+
+$$M_{22} = \begin{vmatrix} -7 \end{vmatrix} = -7$$
+
+Kofaktor:
+
+$$C_{11} = (+)M_{11} = 4$$
+
+$$C_{12} = (-)M_{12} = -1$$
+
+$$C_{21} = (-)M_{21} = 5$$
+
+$$C_{22} = (+)M_{22} = -7$$
+
 Adjoin:
 
 $$
@@ -276,9 +297,157 @@ $$
 det(A)=−2
 $$
 
+**Minor:**
+
+$M_{11}:$
+
+$$
+\begin{split}
+M_{11} =
+\begin{vmatrix}
+-2 & -1 \\
+0 & 1
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (-2)(1) - (-1)(0)$$
+
+$$= -2 - 0 = -2$$
+
+$M_{12}:$
+
+$$
+\begin{split}
+M_{12} =
+\begin{vmatrix}
+1 & -1 \\
+0 & 1
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (1)(1) - (-1)(0)$$
+
+$$= 1 - 0 = 1$$
+
+$M_{13}:$
+
+$$
+\begin{split}
+M_{13} =
+\begin{vmatrix}
+1 & -2 \\
+0 & 0
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (1)(0) - (-2)(0)$$
+
+$$= 0 - 0 = 0$$
+
+$M_{21}$
+
+$$
+\begin{split}
+M_{21} =
+\begin{vmatrix}
+2 & -3 \\
+0 & 1
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (2)(1) - (-3)(0)$$
+
+$$= 2 - 0 = 2$$
+
+$M_{22}$
+
+$$
+\begin{split}
+M_{22} =
+\begin{vmatrix}
+0 & -3 \\
+0 & 1
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (0)(1) - (-3)(0)$$
+
+$$= 0 - 0 = 0$$
+
+$M_{23}$
+
+$$
+\begin{split}
+M_{23} =
+\begin{vmatrix}
+0 & 2 \\
+0 & 0
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (0)(0) - (2)(0)$$
+
+$$= 0 - 0 = 0$$
+
+$M_{31}$
+
+$$
+\begin{split}
+M_{31} =
+\begin{vmatrix}
+2 & -3 \\
+-2 & -1
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (2)(-1) - (-3)(-2)$$
+
+$$= -2 - 6 = -8$$
+
+$M_{32}$
+
+$$
+\begin{split}
+M_{32} =
+\begin{vmatrix}
+0 & -3 \\
+1 & -1
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (0)(-1) - (-3)(1)$$
+
+$$= 0 + 3 = 3$$
+
+$M_{33}$
+
+$$
+\begin{split}
+M_{33} =
+\begin{vmatrix}
+0 & 2 \\
+1 & -2
+\end{vmatrix}
+\end{split}
+$$
+
+$$= (0)(-2) - (2)(1)$$
+
+$$= 0 - 2 = -2$$
+
 **Matriks kofaktor**
 
 Hitung minor + tanda:
+
+$$C_{ij} = (-1)^{i+j} M_{ij}$$
 
 $$
 C = \begin{bmatrix} -2 & -1 & 0 \\ -2 & 0 & 0 \\ -8 & -3 & -2 \end{bmatrix}
@@ -293,7 +462,22 @@ $$
 **Invers**
 
 $$
+A^{-1} = \frac{1}{\det(A)} \operatorname{adj}(A)
+$$
+
+$$
 A^{-1} = \frac{1}{-2} Adj(A)
+$$
+
+$$
+\begin{split}
+A^{-1} = \frac{1}{-2}
+\begin{bmatrix}
+-2 & -2 & -8 \\
+-1 & 0 & -3 \\
+0 & 0 & -2
+\end{bmatrix}
+\end{split}
 $$
 
 $$
