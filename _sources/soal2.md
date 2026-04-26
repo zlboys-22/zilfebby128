@@ -72,10 +72,11 @@ $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
 
 Gunakan ekspansi baris pertama:
 
-
 $$\det(A) = 0 \cdot M_{11} - 2 \cdot M_{12} + (-3) \cdot M_{13}$$​
 
+
 Hitung minor:
+
 
 Minor $M_{12}$ :
 
