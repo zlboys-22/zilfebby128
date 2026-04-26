@@ -78,11 +78,15 @@ Hitung minor:
 
 1. Minor $M_{12}$ :
 
-$$\begin{vmatrix}1 & −1 \\ 0 & 1\end{vmatrix} = (1)(1)−(−1)(0)=1$$​
+$$
+\begin{vmatrix}1 & −1 \\ 0 & 1\end{vmatrix} = (1)(1)−(−1)(0)=1
+$$​
 
 2. Minor $M_{13}$ :
 
-$$\begin{vmatrix}1 & −2 \\ 0 & 0\end{vmatrix} =(1)(0)−(−2)(0)=0$$
+$$
+\begin{vmatrix}1 & −2 \\ 0 & 0\end{vmatrix} =(1)(0)−(−2)(0)=0
+$$
 
 Substitusi:
 
@@ -131,7 +135,7 @@ $$=(-3) \begin{vmatrix} −3 & 1 \\ 1 & −3 \end{vmatrix} -1 \begin{vmatrix} 1 
 
 $$=(−3)(8)−(−4)+4=−24+4+4=−16$$
 
-$M_{12}=−16$
+$$M_{12}=−16$$
 
 3. Hitung Minor $M_{13}$
 
@@ -145,19 +149,21 @@ $$=(-3) \begin{vmatrix} 1 & 1 \\ 1 & −3 \end{vmatrix} -1 \begin{vmatrix} 1 & 1
 
 $$=(−3)(−4)−(−4)+0=12+4=16$$
 
-$M_{13}=16$
+$$M_{13}=16$$
 
 4. Hitung Minor $M_{14}$
 
 Hapus baris 1 kolom 4:
 
-$$M_{13} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & 1 & -3 \\ 1 & 1 & 1 \end{vmatrix}$$
+$$M_{14} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & 1 & -3 \\ 1 & 1 & 1 \end{vmatrix}$$
 
 Ekspansi:
 
+$$=(-3) \begin{vmatrix} 1 & -3 \\ 1 & 1 \end{vmatrix} -1 \begin{vmatrix} 1 & -3 \\ 1 & 1 \\ \end{vmatrix} +1 \begin{vmatrix} 1 & 1 \\ 1 & 1 \\ \end{vmatrix}$$
+
+$$​=(−3)(4)−(4)+0=−12−4=−16$$
+
 $$
-=(-3) \begin{vmatrix} 1 & -3 \\ 1 & 1 \end{vmatrix} -1 \begin{vmatrix} 1 & -3 \\ 1 & 1 \\ \end{vmatrix} +1 \begin{vmatrix} 1 & 1 \\ 1 & 1 \\ \end{vmatrix}
-​=(−3)(4)−(4)+0=−12−4=−16
 M_{14}=−16
 $$
 
