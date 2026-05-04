@@ -248,4 +248,4 @@ $$
 (x, y) \rightarrow (-(x+t), y)
 $$
 
-# **Implementasi Di Colab: https://colab.research.google.com/drive/1C2bOEoPZ66XCb5f2ckI7jeoinAnZ8rDT?usp=sharing**
+#### **Implementasi Di Colab: https://colab.research.google.com/drive/1C2bOEoPZ66XCb5f2ckI7jeoinAnZ8rDT?usp=sharing**
