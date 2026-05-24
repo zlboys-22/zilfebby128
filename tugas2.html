@@ -187,18 +187,6 @@
 <li class="toctree-l1"><a class="reference internal" href="soal2.html"><strong>Soal Determinan Matriks dan Adjoin</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas.html"><strong>Tranformasi Matriks</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Dekomposisi QR dan QR Iteration</strong></a></li>
-
-
-
-
-
-
-
-
-
-
-
-
 </ul>
 
     </div>
@@ -394,31 +382,29 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Dekomposisi QR dan QR Iteration</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a">Matriks A</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-1-membentuk-vektor-q1">Tahap 1 — Membentuk Vektor q₁</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-panjang-vektor-a1">Menghitung Panjang Vektor a₁</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-q1">Menghitung q₁</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a">Matriks A</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-1-membentuk-vektor-q1">Tahap 1 — Membentuk Vektor q₁</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-panjang-vektor-a1">Menghitung Panjang Vektor a₁</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-q1">Menghitung q₁</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-2-menghitung-dot-product-q1-a2">Tahap 2 — Menghitung Dot Product q₁ · a₂</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-3-menghitung-v2">Tahap 3 — Menghitung v₂</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-4-normalisasi-v2-menjadi-q2">Tahap 4 — Normalisasi v₂ Menjadi q₂</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-q2">Menghitung q₂</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-2-menghitung-dot-product-q1-a2">Tahap 2 — Menghitung Dot Product q₁ · a₂</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-3-menghitung-v2">Tahap 3 — Menghitung v₂</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-4-normalisasi-v2-menjadi-q2">Tahap 4 — Normalisasi v₂ Menjadi q₂</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-q2">Menghitung q₂</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-5-membentuk-matriks-q">Tahap 5 — Membentuk Matriks Q</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-6-menghitung-matriks-r">Tahap 6 — Menghitung Matriks R</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-7-verifikasi-qr-a">Tahap 7 — Verifikasi QR = A</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-8-iterasi-qr-pertama">Tahap 8 — Iterasi QR Pertama</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-9-qr-iteration-10-kali">Tahap 9 — QR Iteration 10 Kali</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-iterasi">Hasil Iterasi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clik-link-ini-untuk-mengarah-ke-colab">clik link ini untuk mengarah ke colab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-5-membentuk-matriks-q">Tahap 5 — Membentuk Matriks Q</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-6-menghitung-matriks-r">Tahap 6 — Menghitung Matriks R</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-7-verifikasi-qr-a">Tahap 7 — Verifikasi QR = A</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-8-iterasi-qr-pertama">Tahap 8 — Iterasi QR Pertama</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-9-qr-iteration-10-kali">Tahap 9 — QR Iteration 10 Kali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-iterasi">Hasil Iterasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clik-link-ini-untuk-mengarah-ke-colab">clik link ini untuk mengarah ke colab</a></li>
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -431,10 +417,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="dekomposisi-qr-dan-qr-iteration">
 <h1><strong>Dekomposisi QR dan QR Iteration</strong><a class="headerlink" href="#dekomposisi-qr-dan-qr-iteration" title="Link to this heading">#</a></h1>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="matriks-a">
-<h1>Matriks A<a class="headerlink" href="#matriks-a" title="Link to this heading">#</a></h1>
+<section id="matriks-a">
+<h2>Matriks A<a class="headerlink" href="#matriks-a" title="Link to this heading">#</a></h2>
 <p>Diberikan matriks:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -460,8 +445,8 @@ A=
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-1-membentuk-vektor-q1">
-<h1>Tahap 1 — Membentuk Vektor q₁<a class="headerlink" href="#tahap-1-membentuk-vektor-q1" title="Link to this heading">#</a></h1>
+<section id="tahap-1-membentuk-vektor-q1">
+<h2>Tahap 1 — Membentuk Vektor q₁<a class="headerlink" href="#tahap-1-membentuk-vektor-q1" title="Link to this heading">#</a></h2>
 <p>Kolom pertama matriks A:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -473,7 +458,7 @@ a_1=
 \end{split}\]</div>
 <hr class="docutils" />
 <section id="menghitung-panjang-vektor-a1">
-<h2>Menghitung Panjang Vektor a₁<a class="headerlink" href="#menghitung-panjang-vektor-a1" title="Link to this heading">#</a></h2>
+<h3>Menghitung Panjang Vektor a₁<a class="headerlink" href="#menghitung-panjang-vektor-a1" title="Link to this heading">#</a></h3>
 <p>Rumus norma vektor:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -502,7 +487,7 @@ a_1=
 </section>
 <hr class="docutils" />
 <section id="menghitung-q1">
-<h2>Menghitung q₁<a class="headerlink" href="#menghitung-q1" title="Link to this heading">#</a></h2>
+<h3>Menghitung q₁<a class="headerlink" href="#menghitung-q1" title="Link to this heading">#</a></h3>
 <p>Rumus:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -545,8 +530,8 @@ q_1=
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-2-menghitung-dot-product-q1-a2">
-<h1>Tahap 2 — Menghitung Dot Product q₁ · a₂<a class="headerlink" href="#tahap-2-menghitung-dot-product-q1-a2" title="Link to this heading">#</a></h1>
+<section id="tahap-2-menghitung-dot-product-q1-a2">
+<h2>Tahap 2 — Menghitung Dot Product q₁ · a₂<a class="headerlink" href="#tahap-2-menghitung-dot-product-q1-a2" title="Link to this heading">#</a></h2>
 <p>Kolom kedua matriks A:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -597,8 +582,8 @@ q_1 \cdot a_2
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-3-menghitung-v2">
-<h1>Tahap 3 — Menghitung v₂<a class="headerlink" href="#tahap-3-menghitung-v2" title="Link to this heading">#</a></h1>
+<section id="tahap-3-menghitung-v2">
+<h2>Tahap 3 — Menghitung v₂<a class="headerlink" href="#tahap-3-menghitung-v2" title="Link to this heading">#</a></h2>
 <p>Rumus Gram-Schmidt:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -682,8 +667,8 @@ v_2
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-4-normalisasi-v2-menjadi-q2">
-<h1>Tahap 4 — Normalisasi v₂ Menjadi q₂<a class="headerlink" href="#tahap-4-normalisasi-v2-menjadi-q2" title="Link to this heading">#</a></h1>
+<section id="tahap-4-normalisasi-v2-menjadi-q2">
+<h2>Tahap 4 — Normalisasi v₂ Menjadi q₂<a class="headerlink" href="#tahap-4-normalisasi-v2-menjadi-q2" title="Link to this heading">#</a></h2>
 <p>Norma v₂:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -713,7 +698,7 @@ v_2
 \]</div>
 <hr class="docutils" />
 <section id="menghitung-q2">
-<h2>Menghitung q₂<a class="headerlink" href="#menghitung-q2" title="Link to this heading">#</a></h2>
+<h3>Menghitung q₂<a class="headerlink" href="#menghitung-q2" title="Link to this heading">#</a></h3>
 <p>Rumus:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -755,8 +740,8 @@ q_2
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-5-membentuk-matriks-q">
-<h1>Tahap 5 — Membentuk Matriks Q<a class="headerlink" href="#tahap-5-membentuk-matriks-q" title="Link to this heading">#</a></h1>
+<section id="tahap-5-membentuk-matriks-q">
+<h2>Tahap 5 — Membentuk Matriks Q<a class="headerlink" href="#tahap-5-membentuk-matriks-q" title="Link to this heading">#</a></h2>
 <p>Matriks Q dibentuk dari q₁ dan q₂:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -792,8 +777,8 @@ Q=
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-6-menghitung-matriks-r">
-<h1>Tahap 6 — Menghitung Matriks R<a class="headerlink" href="#tahap-6-menghitung-matriks-r" title="Link to this heading">#</a></h1>
+<section id="tahap-6-menghitung-matriks-r">
+<h2>Tahap 6 — Menghitung Matriks R<a class="headerlink" href="#tahap-6-menghitung-matriks-r" title="Link to this heading">#</a></h2>
 <p>Rumus:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -834,8 +819,8 @@ R=
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-7-verifikasi-qr-a">
-<h1>Tahap 7 — Verifikasi QR = A<a class="headerlink" href="#tahap-7-verifikasi-qr-a" title="Link to this heading">#</a></h1>
+<section id="tahap-7-verifikasi-qr-a">
+<h2>Tahap 7 — Verifikasi QR = A<a class="headerlink" href="#tahap-7-verifikasi-qr-a" title="Link to this heading">#</a></h2>
 <p>Kalikan:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -887,8 +872,8 @@ QR=
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-8-iterasi-qr-pertama">
-<h1>Tahap 8 — Iterasi QR Pertama<a class="headerlink" href="#tahap-8-iterasi-qr-pertama" title="Link to this heading">#</a></h1>
+<section id="tahap-8-iterasi-qr-pertama">
+<h2>Tahap 8 — Iterasi QR Pertama<a class="headerlink" href="#tahap-8-iterasi-qr-pertama" title="Link to this heading">#</a></h2>
 <p>Rumus iterasi:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -935,8 +920,8 @@ RQ
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-9-qr-iteration-10-kali">
-<h1>Tahap 9 — QR Iteration 10 Kali<a class="headerlink" href="#tahap-9-qr-iteration-10-kali" title="Link to this heading">#</a></h1>
+<section id="tahap-9-qr-iteration-10-kali">
+<h2>Tahap 9 — QR Iteration 10 Kali<a class="headerlink" href="#tahap-9-qr-iteration-10-kali" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Matrix</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">pprint</span>
 
 <span class="n">A</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([</span>
@@ -975,8 +960,8 @@ RQ
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="hasil-iterasi">
-<h1>Hasil Iterasi<a class="headerlink" href="#hasil-iterasi" title="Link to this heading">#</a></h1>
+<section id="hasil-iterasi">
+<h2>Hasil Iterasi<a class="headerlink" href="#hasil-iterasi" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A_1=
@@ -1028,8 +1013,8 @@ A_{10}
 \end{split}\]</div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="kesimpulan">
-<h1>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
+<section id="kesimpulan">
+<h2>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
 <p>Metode QR Iteration berhasil menemukan nilai eigen matriks:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1059,8 +1044,9 @@ A=
 \]</div>
 <hr class="docutils" />
 <section id="clik-link-ini-untuk-mengarah-ke-colab">
-<h2>clik link ini untuk mengarah ke colab<a class="headerlink" href="#clik-link-ini-untuk-mengarah-ke-colab" title="Link to this heading">#</a></h2>
+<h3>clik link ini untuk mengarah ke colab<a class="headerlink" href="#clik-link-ini-untuk-mengarah-ke-colab" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://colab.research.google.com/drive/10Vt-lW4kQfUDR9UvyDifsQwe1P9mNy9Y?usp=sharing"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</section>
 </section>
 </section>
 
@@ -1119,31 +1105,29 @@ A=
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Dekomposisi QR dan QR Iteration</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a">Matriks A</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-1-membentuk-vektor-q1">Tahap 1 — Membentuk Vektor q₁</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-panjang-vektor-a1">Menghitung Panjang Vektor a₁</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-q1">Menghitung q₁</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a">Matriks A</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-1-membentuk-vektor-q1">Tahap 1 — Membentuk Vektor q₁</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-panjang-vektor-a1">Menghitung Panjang Vektor a₁</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-q1">Menghitung q₁</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-2-menghitung-dot-product-q1-a2">Tahap 2 — Menghitung Dot Product q₁ · a₂</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-3-menghitung-v2">Tahap 3 — Menghitung v₂</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-4-normalisasi-v2-menjadi-q2">Tahap 4 — Normalisasi v₂ Menjadi q₂</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-q2">Menghitung q₂</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-2-menghitung-dot-product-q1-a2">Tahap 2 — Menghitung Dot Product q₁ · a₂</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-3-menghitung-v2">Tahap 3 — Menghitung v₂</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-4-normalisasi-v2-menjadi-q2">Tahap 4 — Normalisasi v₂ Menjadi q₂</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-q2">Menghitung q₂</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-5-membentuk-matriks-q">Tahap 5 — Membentuk Matriks Q</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-6-menghitung-matriks-r">Tahap 6 — Menghitung Matriks R</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-7-verifikasi-qr-a">Tahap 7 — Verifikasi QR = A</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-8-iterasi-qr-pertama">Tahap 8 — Iterasi QR Pertama</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-9-qr-iteration-10-kali">Tahap 9 — QR Iteration 10 Kali</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-iterasi">Hasil Iterasi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clik-link-ini-untuk-mengarah-ke-colab">clik link ini untuk mengarah ke colab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-5-membentuk-matriks-q">Tahap 5 — Membentuk Matriks Q</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-6-menghitung-matriks-r">Tahap 6 — Menghitung Matriks R</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-7-verifikasi-qr-a">Tahap 7 — Verifikasi QR = A</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-8-iterasi-qr-pertama">Tahap 8 — Iterasi QR Pertama</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-9-qr-iteration-10-kali">Tahap 9 — QR Iteration 10 Kali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-iterasi">Hasil Iterasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clik-link-ini-untuk-mengarah-ke-colab">clik link ini untuk mengarah ke colab</a></li>
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>

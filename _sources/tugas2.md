@@ -2,7 +2,7 @@
 
 ---
 
-# Matriks A
+## Matriks A
 
 Diberikan matriks:
 
@@ -33,7 +33,7 @@ Matrix([[2, 1], [1, 2]])
 
 ---
 
-# Tahap 1 — Membentuk Vektor q₁
+## Tahap 1 — Membentuk Vektor q₁
 
 Kolom pertama matriks A:
 
@@ -47,7 +47,7 @@ $$
 
 ---
 
-## Menghitung Panjang Vektor a₁
+### Menghitung Panjang Vektor a₁
 
 Rumus norma vektor:
 
@@ -80,7 +80,7 @@ Norma a1 = sqrt(5)
 
 ---
 
-## Menghitung q₁
+### Menghitung q₁
 
 Rumus:
 
@@ -128,7 +128,7 @@ Matrix([
 
 ---
 
-# Tahap 2 — Menghitung Dot Product q₁ · a₂
+## Tahap 2 — Menghitung Dot Product q₁ · a₂
 
 Kolom kedua matriks A:
 
@@ -186,7 +186,7 @@ Output:
 
 ---
 
-# Tahap 3 — Menghitung v₂
+## Tahap 3 — Menghitung v₂
 
 Rumus Gram-Schmidt:
 
@@ -278,7 +278,7 @@ Matrix([
 
 ---
 
-# Tahap 4 — Normalisasi v₂ Menjadi q₂
+## Tahap 4 — Normalisasi v₂ Menjadi q₂
 
 Norma v₂:
 
@@ -310,7 +310,7 @@ $$
 
 ---
 
-## Menghitung q₂
+### Menghitung q₂
 
 Rumus:
 
@@ -357,7 +357,7 @@ Matrix([
 
 ---
 
-# Tahap 5 — Membentuk Matriks Q
+## Tahap 5 — Membentuk Matriks Q
 
 Matriks Q dibentuk dari q₁ dan q₂:
 
@@ -398,7 +398,7 @@ Matrix([
 
 ---
 
-# Tahap 6 — Menghitung Matriks R
+## Tahap 6 — Menghitung Matriks R
 
 Rumus:
 
@@ -445,7 +445,7 @@ Matrix([
 
 ---
 
-# Tahap 7 — Verifikasi QR = A
+## Tahap 7 — Verifikasi QR = A
 
 Kalikan:
 
@@ -503,7 +503,7 @@ Matrix([
 
 ---
 
-# Tahap 8 — Iterasi QR Pertama
+## Tahap 8 — Iterasi QR Pertama
 
 Rumus iterasi:
 
@@ -556,7 +556,7 @@ Matrix([
 
 ---
 
-# Tahap 9 — QR Iteration 10 Kali
+## Tahap 9 — QR Iteration 10 Kali
 
 ```python
 from sympy import Matrix, sqrt, N, pprint
@@ -597,7 +597,7 @@ for k in range(1, 11):
 
 ---
 
-# Hasil Iterasi
+## Hasil Iterasi
 
 $$
 A_1=
@@ -650,7 +650,7 @@ $$
 
 ---
 
-# Kesimpulan
+## Kesimpulan
 
 Metode QR Iteration berhasil menemukan nilai eigen matriks:
 
