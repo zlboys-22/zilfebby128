@@ -119,7 +119,7 @@ Setiap angka menunjukkan tingkat terang suatu piksel.
 Metode SVD memecah matriks gambar:
 
 ```math
-A = U\Sigma V^T
+$A = U\Sigma V^T$
 ```
 
 menjadi tiga bagian utama.
