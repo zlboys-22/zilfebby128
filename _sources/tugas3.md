@@ -80,9 +80,9 @@ Karena ukuran gambar:
 
 maka matriks gambar:
 
-```math
+$$
 A_{343 \times 371}
-```
+$$
 
 Artinya:
 
@@ -91,9 +91,9 @@ Artinya:
 
 Jumlah total piksel:
 
-```math
+$$
 343 \times 371 = 127253
-```
+$$
 
 Jadi gambar direpresentasikan sebagai:
 
@@ -118,9 +118,9 @@ Setiap angka menunjukkan tingkat terang suatu piksel.
 
 Metode SVD memecah matriks gambar:
 
-```math
+$$
 $A = U\Sigma V^T$
-```
+$$
 
 menjadi tiga bagian utama.
 
@@ -175,9 +175,9 @@ A = (343 × 371)
 
 maka:
 
-```math
+$$
 (343 \times 371)(371 \times 343) = 343 \times 343
-```
+$$
 
 hasil:
 
@@ -209,9 +209,9 @@ Setelah mendapatkan AAᵀ, langkah berikutnya adalah mencari:
 
 Secara matematis:
 
-```math
+$$
 (AA^T - \lambda I)x = 0
-```
+$$
 
 dengan:
 
@@ -258,9 +258,9 @@ Misalnya:
 
 Singular value diperoleh dari akar eigenvalue:
 
-```math
+$$
 \sigma_i = \sqrt{\lambda_i}
-```
+$$
 
 Pada program sebenarnya proses ini dihitung otomatis oleh:
 
@@ -304,15 +304,15 @@ Karena itu:
 
 Eigenvector dari:
 
-```math
+$$
 AA^T
-```
+$$
 
 dikumpulkan menjadi:
 
-```math
+$$
 U = [u_1 \ u_2 \ u_3 \ ... \ u_{343}]
-```
+$$
 
 Ukurannya:
 
@@ -364,9 +364,9 @@ A  = (343 × 371)
 
 maka:
 
-```math
+$$
 (371 \times 343)(343 \times 371) = 371 \times 371
-```
+$$
 
 hasil:
 
@@ -457,14 +457,14 @@ Sigma = np.diag(S)
 
 Menjadi:
 
-```math
+$$
 \Sigma =
 \begin{bmatrix}
 \sigma_1 & 0 & 0 \\
 0 & \sigma_2 & 0 \\
 0 & 0 & \sigma_3
 \end{bmatrix}
-```
+$$
 
 ### Penjelasan Sigma
 
@@ -493,9 +493,9 @@ gambar_rekonstruksi = U_k @ S_k @ Vt_k
 
 Secara matematis:
 
-```math
+$$
 A_k = U_k\Sigma_kV_k^T
-```
+$$
 
 ### Penjelasan
 
@@ -637,9 +637,9 @@ Vᵀ (343 × 371)
 ### STEP 8
 Hitung singular value:
 
-```math
+$$
 \sigma_i = \sqrt{\lambda_i}
-```
+$$
 
 ↓
 
@@ -655,8 +655,8 @@ Bentuk:
 ### STEP 10
 Rekonstruksi:
 
-```math
+$$
 A = U\Sigma V^T
-```
+$$
 
 untuk menghasilkan kembali gambar hasil kompresi.
